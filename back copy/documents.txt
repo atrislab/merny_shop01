@@ -1,0 +1,141 @@
+{
+    "company_name": "Teatro Marquina",
+    "CIF": "B40236882",
+    "address": "Calle de Prim 11",
+    "url_web":"https://www.tortillasmarquina.com"
+}
+
+{
+    "company_name": "Teatro Marquina",
+    "CIF": "B40236882",
+    "address": "Calle de Prim 11",
+    "url_web":"https://www.tortillasmarquina.com"
+}
+
+{
+  "_id": {
+    "$oid": "6489aeeac22a843b68f62d12"
+  },
+  "company_name": "Teatro Marquina",
+  "CIF": "B40236882",
+  "address": "Calle de Prim 11",
+  "url_web": "https://www.tortillasmarquina.com"
+}
+
+
+db.providers.insertOne({
+    "company_name": "Teatro Marquina",
+    "CIF": "B40236882",
+    "address": "Calle de Prim 11",
+    "url_web":"https://www.tortillasmarquina.com"
+})
+
+db.providers.insertOne({
+    "company_name": "Skyforge",
+    "CIF": "D2226882",
+    "address": "Skyforge, Whiterun, Skyrim",
+})
+
+db.products.insertOne({
+	    "id":6,
+      "title": "Oreja - Marquina",
+	    "price": 3.80,
+        "description":"La mejor ración de oreja de la zona en el Teatro Marquina",
+	    "provider": ObjectId("6489aeeac22a843b68f62d12")
+})
+
+
+db.products.insertOne({
+	    "id": 1
+      "title": "Tortilla - Marquina",
+	    "price": 1.80,
+        "description":"La mejor tortilla de la zona en el Teatro Marquina",
+	    "provider": ObjectId("6489aeeac22a843b68f62d12")
+})
+
+
+
+db.products.insertOne({
+	    "title": "Mini Kalimotxo - Marquina",
+	    "price": 3.50,
+        "description":"Los mejores minis de la zona en el Teatro Marquina",
+	    "provider": ObjectId("6489aeeac22a843b68f62d12")
+})
+
+db.products.insertOne({
+	    "title": "Mini Clara - Marquina",
+	    "price": 3.50,
+        "description":"Los mejores minis de la zona en el Teatro Marquina",
+	    "provider": ObjectId("6489aeeac22a843b68f62d12")
+})
+
+
+
+db.products.insertMany([
+    {
+        "id": 19,
+        "title": "Iron Ingot",
+        "price": 160,
+        "stars": 1,
+        "description":"Lingotes puros, listos para trabajar.",
+        "image": "https://static.wikia.nocookie.net/elderscrolls/images/c/c6/Ingotiron.png/revision/latest?cb=20120513025225",
+        "provider": ObjectId("64b14d20f7841d5b9d6d508a")
+    },
+    {
+        "id": 20,
+        "title": "Steel Ingot",
+        "price": 270,
+        "stars": 2,
+        "description":"Lingotes puros, listos para trabajar.",
+        "image": "https://static.wikia.nocookie.net/elderscrolls/images/3/3b/Ingotsteel.png/revision/latest?cb=20120410064443",
+        "provider": ObjectId("64b14d20f7841d5b9d6d508a")
+    },
+    {
+        "id": 21,
+        "title": "Silver Ingot",
+        "price": 520,
+        "stars": 3,
+        "description":"Lingotes puros, listos para trabajar.",
+        "image": "https://static.wikia.nocookie.net/elderscrolls/images/f/f9/Ingotsilver.png/revision/latest?cb=20120612172836",
+        "provider": ObjectId("64b14d20f7841d5b9d6d508a")
+    }
+]);
+
+db.providers.insertMany([
+    {
+    "company_name": "Cydhna Ores",
+    "CIF": "D2226772",
+    "address": "Cydhna Mine, Refugee's St 23, Markarth, Skyrim",
+    },
+    {
+    "company_name": "GC Alchemics",
+    "CIF": "D2226112",
+    "address": "Grave Concoctions, Falkreath, Skyrim",
+    },
+    {
+    "company_name": "Ink and Paper",
+    "CIF": "D2226332",
+    "address": "Alba's Shop, Blue Palace Sq 6, Solitude, Skyrim",
+    },
+    {
+    "company_name": "Enchanted Berberages",
+    "CIF": "D2226442",
+    "address": "College Av 17, Winterhold, Skyrim",
+    },
+    {
+    "company_name": "Leatherjenn",
+    "CIF": "D2222742",
+    "address": "Northumberland Place 5, Ivarstead, Skyrim",
+    },
+    {
+    "company_name": "Skyforge WA",
+    "CIF": "D2213652",
+    "address": "Thalos Sq 8, Whiterun, Skyrim",
+    },
+    {
+    "company_name": "Ironsilver",
+    "CIF": "D2222783",
+    "address": "Old Inn Road 9, Dawnstar, Skyrim",
+    }
+]);
+
