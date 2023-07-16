@@ -1,27 +1,20 @@
-import React from "react";
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import React from 'react';
+import { Router, Route } from 'wouter';
 import Home from './Home';
 import Title from './Title';
 import Stars from './Stars';
 import Price from './Price';
 import UndefinedRoute from './UndefinedRoute';
 
-
-
-
 const Main = () => {
   return <main>
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/title' element={<Title />}/>
-        <Route path='/stars' element={<Stars />}/>
-        <Route path='/price' element={<Price />}/>
-        <Route path='*' element={<UndefinedRoute />}/>
-
-      </Routes>
-    </BrowserRouter>
-
+    <Router>
+      <Route path='/' component={Home}/>
+      <Route path='/title' component={Title}/>
+      <Route path='/stars' component={Stars}/>
+      <Route path='/price' component={Price}/>
+      <Route path='*' component={UndefinedRoute}/>
+    </Router>
   </main>;
 };
 
