@@ -4,6 +4,7 @@ import Home from './Home';
 import Title from './Title';
 import Stars from './Stars';
 import Price from './Price';
+import SpecificTitle from './SpecificTitle';
 import UndefinedRoute from './UndefinedRoute';
 
 const Main = () => {
@@ -13,6 +14,7 @@ const Main = () => {
       <Route path='/title' component={Title}/>
       <Route path='/stars' component={Stars}/>
       <Route path='/price' component={Price}/>
+      <Route path='/specifictitle' component={SpecificTitle}/>
       <Route path='*' component={UndefinedRoute}/>
     </Router>
   </main>;

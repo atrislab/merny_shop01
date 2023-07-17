@@ -13,9 +13,12 @@
     "axios": "^1.4.0",
     "create-react-component-folder": "^0.3.7",
     "react": "^18.2.0",
+    "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.45.1",
+    "react-loader-spinner": "^5.3.4",
     "react-router-dom": "^6.14.1",
+    "react-spinners": "^0.13.8",
     "wouter": "^2.11.0"
   },
   "devDependencies": {
