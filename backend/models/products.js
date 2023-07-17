@@ -3,27 +3,27 @@ const mongoose = require('mongoose');
 const objectSchema = {
     id: { 
         type: Number, 
-        required: true,
+        //required: true,
         unique: true
     },
     title: { 
         type: String, 
-        required: true,
+        //required: true,
         unique: true 
     },
     price: { 
         type: Number, 
-        required: true 
+        //required: true 
     },
     stars: { 
         type: Number, 
-        required: true 
+        //required: true 
     },
     description: { 
         type: String, 
-        required: true 
+        //required: true 
     },
-    image:{
+    /*image:{
         type: String,
         validate: {
             validator: function(url){
@@ -35,11 +35,11 @@ const objectSchema = {
             }, 
             message: "Porfa, sólo imágenes JPG o PNG"
         }
-    },
+    },*/
     provider:{
         type: mongoose.Schema.Types.ObjectId,
         ref:'Provider',
-        required: true 
+        //required: true 
     }
 };
 

@@ -73,31 +73,130 @@ db.products.insertOne({
 
 db.products.insertMany([
     {
-        "id": 19,
+        "id": 1,
         "title": "Iron Ingot",
-        "price": 160,
+        "price": 50,
         "stars": 1,
         "description":"Lingotes puros, listos para trabajar.",
         "image": "https://static.wikia.nocookie.net/elderscrolls/images/c/c6/Ingotiron.png/revision/latest?cb=20120513025225",
-        "provider": ObjectId("64b14d20f7841d5b9d6d508a")
+        "provider": ObjectId("64b5247ecd7ceb157fa8714b")
     },
     {
-        "id": 20,
+        "id": 2,
         "title": "Steel Ingot",
-        "price": 270,
+        "price": 100,
         "stars": 2,
         "description":"Lingotes puros, listos para trabajar.",
         "image": "https://static.wikia.nocookie.net/elderscrolls/images/3/3b/Ingotsteel.png/revision/latest?cb=20120410064443",
-        "provider": ObjectId("64b14d20f7841d5b9d6d508a")
+        "provider": ObjectId("64b5247ecd7ceb157fa8714b")
     },
     {
-        "id": 21,
+        "id": 3,
         "title": "Silver Ingot",
+        "price": 200,
+        "stars": 2,
+        "description":"Lingotes puros, listos para trabajar.",
+        "image": "https://static.wikia.nocookie.net/elderscrolls/images/3/3b/Ingotsteel.png/revision/latest?cb=20120410064443",
+        "provider": ObjectId("64b5247ecd7ceb157fa8714b")
+    },
+    {
+        "id": 4,
+        "title": "Gold Ingot",
+        "price": 300,
+        "stars": 3,
+        "description":"Lingotes puros, listos para trabajar.",
+        "image": "https://static.wikia.nocookie.net/elderscrolls/images/f/f9/Ingotsilver.png/revision/latest?cb=20120612172836",
+        "provider": ObjectId("64b5247ecd7ceb157fa8714b")
+    },
+    {
+        "id": 5,
+        "title": "Corundum Ingot",
+        "price": 380,
+        "stars": 2,
+        "description":"Lingotes puros, listos para trabajar.",
+        "image": "https://static.wikia.nocookie.net/elderscrolls/images/f/f9/Ingotsilver.png/revision/latest?cb=20120612172836",
+        "provider": ObjectId("64b5247ecd7ceb157fa8714b")
+    },
+    {
+        "id": 6,
+        "title": "Dwemer Ingot",
+        "price": 420,
+        "stars": 3,
+        "description":"Lingotes puros, listos para trabajar.",
+        "image": "https://static.wikia.nocookie.net/elderscrolls/images/f/f9/Ingotsilver.png/revision/latest?cb=20120612172836",
+        "provider": ObjectId("64b5247ecd7ceb157fa8714b")
+    },
+    {
+        "id": 7,
+        "title": "Ebony Ingot",
         "price": 520,
         "stars": 3,
         "description":"Lingotes puros, listos para trabajar.",
         "image": "https://static.wikia.nocookie.net/elderscrolls/images/f/f9/Ingotsilver.png/revision/latest?cb=20120612172836",
-        "provider": ObjectId("64b14d20f7841d5b9d6d508a")
+        "provider": ObjectId("64b5247ecd7ceb157fa8714b")
+    }
+    {
+        "id": 8,
+        "title": "Iron Dagger",
+        "price": 200,
+        "stars": 1,
+        "description":"Las mejores armas y armaduras.",
+        "image": "https://static.wikia.nocookie.net/elderscrolls/images/c/c6/Ingotiron.png/revision/latest?cb=20120513025225",
+        "provider": ObjectId("64b5247ecd7ceb157fa8714a")
+    },
+    {
+        "id": 9,
+        "title": "Steel Sword",
+        "price": 400,
+        "stars": 2,
+        "description":"Las mejores armas y armaduras.",
+        "image": "https://static.wikia.nocookie.net/elderscrolls/images/3/3b/Ingotsteel.png/revision/latest?cb=20120410064443",
+        "provider": ObjectId("64b5247ecd7ceb157fa8714a")
+    },
+    {
+        "id": 10,
+        "title": "Silver Sword",
+        "price": 500,
+        "stars": 2,
+        "description":"Las mejores armas y armaduras.",
+        "image": "https://static.wikia.nocookie.net/elderscrolls/images/3/3b/Ingotsteel.png/revision/latest?cb=20120410064443",
+        "provider": ObjectId("64b5247ecd7ceb157fa8714a")
+    },
+    {
+        "id": 11,
+        "title": "Corundum Dagger",
+        "price": 490,
+        "stars": 3,
+        "description":"Las mejores armas y armaduras.",
+        "image": "https://static.wikia.nocookie.net/elderscrolls/images/f/f9/Ingotsilver.png/revision/latest?cb=20120612172836",
+        "provider": ObjectId("64b5247ecd7ceb157fa8714a")
+    },
+    {
+        "id": 12,
+        "title": "Corundum Sword",
+        "price": 680,
+        "stars": 2,
+        "description":"Las mejores armas y armaduras.",
+        "image": "https://static.wikia.nocookie.net/elderscrolls/images/f/f9/Ingotsilver.png/revision/latest?cb=20120612172836",
+        "provider": ObjectId("64b5247ecd7ceb157fa8714a")
+    },
+    {
+        "id": 13,
+        "title": "Dwemer Axe",
+        "price": 720,
+        "stars": 3,
+        "description":"Las mejores armas y armaduras.",
+        "image": "https://static.wikia.nocookie.net/elderscrolls/images/f/f9/Ingotsilver.png/revision/latest?cb=20120612172836",
+        "provider": ObjectId("64b5247ecd7ceb157fa8714a")
+    },
+    {
+        "id": 14,
+        "title": "Ebony Sword",
+        "price": 1520,
+        "stars": 3,
+        "description":"Las mejores armas y armaduras.",
+        "image": "https://static.wikia.nocookie.net/elderscrolls/images/f/f9/Ingotsilver.png/revision/latest?cb=20120612172836",
+        "provider": ObjectId("64b5247ecd7ceb157fa8714a")
     }
 ]);
 

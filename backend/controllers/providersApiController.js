@@ -21,6 +21,33 @@ const getProvider = async (req, res) => {
   }
 };
 
+//POST
+
+//POST
+const createProvider = async (req, res) => {
+  try {
+    console.log(req.body);
+    const newProvider = req.body;
+    const createdProvider = await Provider.create(newProvider);
+
+    res.status(201).json(createdProvider);
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+const createProviders = async (req, res) => {
+  try {
+    console.log(req.body);
+    const newProviders = req.body;
+    const createdProviders = await Provider.insertMany(newProviders);
+
+    res.status(201).json(createdProviders);
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 /*
 //POST(2)
 const createProvider = async (req, res) => {
@@ -48,35 +75,12 @@ const createProvider = async (req, res) => {
 */
 
 
-//POST CONTROLLER
-const createProvider = async (req, res) => {
-  try {
-    let { cif, company_name, address, url_web } = req.body;
-    let result = new Provider({
-      cif,
-      company_name,
-      address,
-      url_web,
-    });
-
-    let response = await result.save();
-    res.status(201).json({
-      message: "Proveedor creado",
-      provider: {
-        response,
-      },
-    });
-  } catch (err) {
-    console.error(err);
-    throw err;
-  }
-};
-
 
 
 
 module.exports = {
   getProvider,
-  createProvider
+  createProvider,
+  createProviders
   
 };

@@ -4,10 +4,12 @@ const providersRouter = express.Router();
 
 
 //GET
-providersRouter.get('/api/providers/:company?', providersApiController.getProvider);
+providersRouter.get('/:provider?', providersApiController.getProvider);
 
 //POST
-providersRouter.post('/api/providers/', providersApiController.createProvider);
+
+providersRouter.post('/createprovider', providersApiController.createProvider);
+providersRouter.post('/createproviders', providersApiController.createProviders);
 
 
 

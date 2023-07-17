@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
 
 //conectando a la base de datos
-mongoose.connect("mongodb://localhost:27017/merny_shop00");
+//mongoose.connect("mongodb://localhost:27017/nw00");
+//mongoose.connect("mongodb://localhost:27017/merny_00");
+mongoose.connect(process.env.MONGODB_URI);
 
 const db= mongoose.connection;
 
