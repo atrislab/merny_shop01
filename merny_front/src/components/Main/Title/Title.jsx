@@ -22,11 +22,11 @@ const Title = () => {
         <Rings color="#00BFFF" height={80} width={80} />
       ) : (
         products.map((product, i) => (
-          <div key={i}>
-            <h2>{product.title}</h2>
-            <p>{product.stars}</p>
-            <p>{product.price}</p>
-          </div>
+          <article className="cardSmall" key={i}>
+            <p>{product.title}</p>
+            <p>price:{product.price}</p>
+            <p>stars:{product.stars}</p>
+          </article>
         ))
       )}
     </div>

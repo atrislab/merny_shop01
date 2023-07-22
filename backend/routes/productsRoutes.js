@@ -35,7 +35,9 @@ productsApiRouter.get('/stars/desc', productsApiController.getProductsByStarsDes
 
 //Productos por palabra clave (todos los que contienen esa fracción de string en su nombre)
 productsApiRouter.get('/title/:title', productsApiController.getProductsByKeyword);
+productsApiRouter.get('/specifictitle/:title', productsApiController.getProductsByKeyword);
 //  http://localhost:3000/api/products/title/Steel
+//  http://localhost:3000/api/products/specifictitle/Steel
 
 //Productos por nombre completo (un solo producto)
 productsApiRouter.get('/title/:title', productsApiController.getProductByTitle);
