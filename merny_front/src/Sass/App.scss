@@ -1,3 +1,9 @@
+body {
+    background-color: rgb(250, 220, 176);
+    /*min-width: 376px;*/
+    width: 100%;
+    }
+
 header {
     background-color: rgb(250, 220, 176);
     /*min-width: 376px;*/
@@ -10,11 +16,20 @@ main {
     width: 100%;
 }
     
-    .cardSmall{
-      background-color: rgb(106, 16, 46);
-      
-    }
+.cardSmall{
+    background-color: rgb(106, 16, 46);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    width: 96%;
+    margin-top: 10px;
+
+    p {
+        color: rgb(250, 220, 176);
+        padding-left: 1em;
+        padding-right: 1em;
     
-    .read-the-docs {
-      color: #888;
-    }
+      }
+      
+}

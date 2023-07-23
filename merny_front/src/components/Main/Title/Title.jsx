@@ -17,7 +17,7 @@ const Title = () => {
   }, []);
 
   return (
-    <div>
+    <section>
       {loading ? (
         <Rings color="#00BFFF" height={80} width={80} />
       ) : (
@@ -29,7 +29,7 @@ const Title = () => {
           </article>
         ))
       )}
-    </div>
+    </section>
   );
 };
 
