@@ -22,11 +22,11 @@ const Stars = () => {
         <Rings color="#00BFFF" height={80} width={80} />
       ) : (
         products.map((product, i) => (
-          <div key={i}>
-            <h2>{product.stars}</h2>
+          <article className="cardSmall" key={i}>
+            <p>stars:{product.stars}</p>
             <p>{product.title}</p>
-            <p>{product.price}</p>
-          </div>
+            <p>price:{product.price}</p>
+          </article>
         ))
       )}
     </div>
